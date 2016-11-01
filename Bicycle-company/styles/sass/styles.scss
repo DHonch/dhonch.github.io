@@ -59,11 +59,50 @@ header {
 			margin-left: 35px;
 			margin-right: 35px;
 			vertical-align: middle;
+			cursor: pointer;
+			z-index: 1 ;
 		}
 	}
-	a {
-		color: #4d4959;
-	}
+		li:nth-of-type(1) {
+			a::after {
+				left:89px;
+			}
+		}
+		li:nth-of-type(4) {
+			a::after {
+				left:62px;
+			}
+		}
+		li:nth-of-type(5) {
+			a::after {
+				left:-38px;
+			}
+		}
+			a {
+				color: #4d4959;
+				position: relative;
+				
+			}
+		li:hover {
+			color:grey;
+			transition-duration: 0.5s;
+			}
+			a::after {
+				content: "";
+				width:12px;
+				height:2px;
+				background: grey;
+				position: absolute;
+				border-radius: 2px;
+				z-index: 1 ;
+				top:7px;
+				left:-41px;
+			}
+		li:hover a::after {
+			background: #64c29e;
+			
+			
+		}
 }
 
 
@@ -139,13 +178,15 @@ main {
 			background: #282f35;
 			border:1px solid #94979a;
 			font-size: 14px;
-			transition-duration: 0.2s;
+			transition-duration: 1s;
+			box-shadow:  0px 0px 0px 0px rgba(0,0,0,0.69),0px 0px 0px 0px rgba(255,255,255,1);
 		}
 		a:hover {
-			box-shadow:0px 5px 47px -12px rgba(0,0,0,1), 0px 8px 0px -5px rgba(255,255,255,1);
-			margin-top: -3px;
+			box-shadow:  40px 40px 53px -23px rgba(0,0,0,0.95), 0px 8px 0px -5px rgba(255,255,255,1) ;
+			margin-top: -4px;
 			transition-duration: 0.2s;
 			transform: scale(1.05);
+			border-radius: 1px;
 		}
 	}
 	.box2 {
