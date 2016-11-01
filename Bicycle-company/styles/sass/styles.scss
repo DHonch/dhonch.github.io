@@ -84,7 +84,7 @@ header {
 				
 			}
 		li:hover {
-			color:grey;
+			color:grey;  
 			transition-duration: 0.5s;
 			}
 			a::after {
@@ -94,7 +94,7 @@ header {
 				background: grey;
 				position: absolute;
 				border-radius: 2px;
-				z-index: 1 ;
+				z-index: 2 ;
 				top:7px;
 				left:-41px;
 			}
