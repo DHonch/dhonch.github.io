@@ -7,7 +7,7 @@
   padding: 0;
   margin: 0; }
 
-p, li, a, h1, h2, span {
+p, li, a, h1, h2, span, input {
   font-family: "Lato"; }
 
 .wrapper {
@@ -66,8 +66,35 @@ main .info {
     margin-bottom: 30px; }
   main .info p {
     display: inline-block;
-    width: 67.5%;
-    color: #848789; }
+    width: 67%;
+    padding-left: 16.5%;
+    padding-right: 16.5%;
+    color: #848789;
+    line-height: 33px; }
+  main .info img {
+    margin: auto;
+    display: block;
+    margin-bottom: 35px; }
+  main .info input {
+    display: inline-block;
+    margin: auto;
+    width: 370px;
+    padding: 25px 5px 25px 25px;
+    margin-top: 35px;
+    border: 1px solid lightgrey;
+    font-size: 20px;
+    vertical-align: top; }
+  main .info a {
+    width: 125px;
+    display: inline-block;
+    padding-top: 23px;
+    margin-top: 35px;
+    padding-bottom: 24px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    background: #64c29e;
+    vertical-align: top; }
 main .info:nth-of-type(1) h1 {
   letter-spacing: 5px;
   word-spacing: 10px; }
@@ -84,4 +111,55 @@ main .shop {
     color: white;
     background: #282f35;
     border: 1px solid #94979a;
-    font-size: 14px; }
+    font-size: 14px;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s; }
+  main .shop a:hover {
+    box-shadow: 0px 5px 47px -12px black, 0px 15px 0px -11px white;
+    margin-top: -5px;
+    -webkit-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+            transform: scale(1.05); }
+main .box2 {
+  height: 530px; }
+  main .box2 ul {
+    width: 100%; }
+  main .box2 > ul li {
+    width: 17%;
+    float: left;
+    height: 530px;
+    width: 267px; }
+  main .box2 > ul li:nth-of-type(1) {
+    background: #000; }
+    main .box2 > ul li:nth-of-type(1) ul li {
+      height: 265px; }
+    main .box2 > ul li:nth-of-type(1) ul li:nth-of-type(1) {
+      width: 50%;
+      background: url(../img/box2/photo1.1.png) center top no-repeat; }
+    main .box2 > ul li:nth-of-type(1) ul li:nth-of-type(2) {
+      width: 50%;
+      background: url(../img/box2/photo1.3.png) center top no-repeat; }
+    main .box2 > ul li:nth-of-type(1) ul li:nth-of-type(3) {
+      width: 100%;
+      background: url(../img/box2/photo1.png) center top no-repeat; }
+  main .box2 > ul li:nth-of-type(2) {
+    background: url(../img/box2/photo2.png) center top no-repeat; }
+  main .box2 > ul li:nth-of-type(3) {
+    background: url(../img/box2/photo3.png) center top no-repeat; }
+  main .box2 > ul li:nth-of-type(4) {
+    background: #000; }
+    main .box2 > ul li:nth-of-type(4) ul li {
+      height: 265px; }
+    main .box2 > ul li:nth-of-type(4) ul li:nth-of-type(1) {
+      width: 100%;
+      background: url(../img/box2/photo4.png) center center no-repeat; }
+    main .box2 > ul li:nth-of-type(4) ul li:nth-of-type(2) {
+      width: 50%;
+      background: url(../img/box2/photo4.1.png) center center no-repeat; }
+    main .box2 > ul li:nth-of-type(4) ul li:nth-of-type(3) {
+      width: 50%;
+      background: url(../img/box2/photo4.2.png) center center no-repeat; }
+  main .box2 > ul li:first-of-type, main .box2 > ul li:last-of-type {
+    width: 533px; }
