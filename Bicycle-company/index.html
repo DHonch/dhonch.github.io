@@ -5,15 +5,15 @@
 	<title>Bicycle CO.</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-
+    
 </head>
 <body>
 	<div class="wrapper">
 
 		<header>
 			<ul>
-				<li><a href="">ABOUT US</a></li>
-				<li><a href="">WORK</a></li>
+				<li><a href=""  id="btn1">ABOUT US</a></li>
+				<li><a href=""  onclick="mybtn()">WORK</a></li>
 				<li><img src="img/info-logo.png" alt=""></li>
 				<li><a href="">SHOP</a></li>
 				<li><a href="">CONTACT</a></li>
@@ -29,13 +29,51 @@
 			</div>
 			<div class="photoBox">
 				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+
+					<li>
+						<ul>
+							<li class="bigpic">
+							<img src="img/work/pic1b.png" width="100%" height="100%" alt="">
+							<img src="img/work/logo1.png" class="logo"  alt="">
+							</li>
+							<li class="smallpic marginl-5">
+								<ul>
+									<li>
+									 <img src="img/work/icon1.png" alt="">
+									 <h2>VINTAGE OLIVA</h2>
+									 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolore possimus expedita vitae doloribus laborum dignissimos quam asperiores pariatur natus cum suscipit alias officiis, dolor et nemo deserunt debitis in.</p>
+									</li>
+									<li><img src="img/work/pic1s.png" width="100%"
+							height="100%" alt=""></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+
+					<li><ul>
+							<li class="smallpic marginr-5">
+								<ul>
+									<li>
+									<img src="img/work/icon2.png" alt="">
+									 <h2>VINTAGE OLIVA</h2>
+									 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere dolore possimus expedita vitae doloribus laborum dignissimos quam asperiores pariatur natus cum suscipit alias officiis, dolor et nemo deserunt debitis in.</p>
+
+									</li>
+									<li>
+									<img src="img/work/pic2s.png"width="100%" height="100%" alt="">
+									
+									</li>
+								</ul>
+							</li>
+							<li class="bigpic">
+							<img src="img/work/pic2b.png" width="100%" height="100%" alt="">
+							<img src="img/work/logo2.png" class="logo"  alt=""></li>
+						</ul></li>
+					<li><ul>
+							<li></li>
+							<li></li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 			<div class="info">
@@ -60,7 +98,7 @@
 						</ul></li>
 				</ul>
 			</div>
-			<div class="shop"><a href="">DISCOVER THE SHOP</a></div>
+			<div class="shop"><a href=""  onclick="mDown(this) ;return false;">DISCOVER THE SHOP</a></div>
 			<div class="info">
 				<img src="img/info-logo.png" alt="">
 				<p>Stay on the saddle!</p>
@@ -85,5 +123,12 @@
 		</footer>
 
 	</div>
+	<script src="styles/js/page.js"> </script>
+			<script>
+				 function mybtn() {
+    			alert('[Odd]');
+					}
+
+			</script>
 </body>
 </html>
