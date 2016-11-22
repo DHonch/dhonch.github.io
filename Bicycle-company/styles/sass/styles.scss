@@ -73,12 +73,12 @@ header {
 	}
 		li:nth-of-type(1) {
 			a:after {
-				left:89px;
+				left:97px;
 			}
 		}
 		li:nth-of-type(4) {
 			a:after {
-				left:62px;
+				left:71px;
 			}
 		}
 		li:nth-of-type(5) {
@@ -95,20 +95,23 @@ header {
 			color:grey;  
 			transition-duration: 0.5s;
 			}
-			a:after {
+		a:after {
 				content: "";
-				width:12px;
-				height:2px;
+				width:3px;
+				height:3px;
+				opacity: 0;
 				background: grey;
 				position: absolute;
-				border-radius: 2px;
+				border-radius: 50%;
 				z-index: 2 ;
 				top:7px;
 				left:-41px;
-			}
+				transition-duration: 0.5s;
+		}
 		li:hover a:after {
-			background: #64c29e;
 			
+			opacity: 0.8;
+			transition-duration: 1s;
 			
 		}
 }
@@ -185,19 +188,24 @@ main {
 				>ul {height: 600px;
 					>li {height: 600px;
 						text-align: center;
+						vertical-align: top;
+						>ul>li {
+							float: left;
+						}
 						
 					}
 					.bigpic {
 						width: 66%;
-						display: inline-block;
+						float: left;
 						overflow:  hidden ;
 						position: relative;
 					}
 					.smallpic {
 						word-break:  break-all;
-						width:32.5%;
+						width:33.9%;
 						overflow:  hidden ;
-						display: inline-block;
+						float: left;
+						position: relative;
 						vertical-align: bottom;
 						li:nth-of-type(1) {
 							padding: 60px 11% 40px 11%;
@@ -212,7 +220,7 @@ main {
 									content:"";
 									position: relative;
 									width: 15px;
-									height: 15px;
+									height: 16px;
 									top:224px;
 									left: 50%;
 									margin-left: -7px;
@@ -229,20 +237,19 @@ main {
 							letter-spacing: 3px;
 						}
 						li:nth-of-type(2) {
-							vertical-align: bottom;
+							width: 100%;
+							height: 200px;
 						}
 					}
-					.smallpic:hover p:before {
-						transform: rotate(45deg);
-						top: 227px !important;
-						transition-duration: 1s;
-					}
+				
 					.marginl-5 {
 						margin-left: -3px;
 					}
 					.marginr-5 {
 						margin-right: -3px;
 					}
+					.halfwidth {
+						width: 33%;}
 					.logo {
 						position: absolute;
 						left:50%;
@@ -251,10 +258,18 @@ main {
 						top: 230px;
 						
 					}
+					.fll {float: left;}
+					.flr {float: right;}
 
 				}
 				
 			}
+		}
+		>ul>li:nth-of-type(3)>ul>li:nth-of-type(2)>ul>li:nth-of-type(1) p:before {
+			top: 216px;
+		}
+		>ul>li:nth-of-type(3)>ul>li:nth-of-type(3) {
+			width: 32.1%;
 		}
 	}
 
