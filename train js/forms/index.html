@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+</head>
+<body>
+	<div class="form">
+	<h1>Registration</h1>
+		<form >
+		<ul>
+		<li><p>Your name </p><input type="text" required></li>
+		<li><p>Your surname </p><input type="text" ></li>
+		<li><p>Your e-mail </p><input type="e-mail" required ></li>
+		<li><p>Choose login </p><input type="text"></li>
+		<li><p>Enter the password </p><input type="password"></li>
+		<li><p>Enter the password <br>again</p><input type="password"></li>
+		<li class="tel">
+			<h2>Bind Tel.</h2>
+			<p>Choose your region</p>
+			<select name="region" size="1">
+				<option value="Ukraine">Ukraine</option>
+				<option value="Russia">Russia</option>
+				<option value="Belarus">Belarus</option>	
+			</select> <br>
+			<ul>
+				<li><p>+38</p><span class="bracket" >(</span><select name="operator" size="1">
+				<option value="Ukraine">050</option>
+				<option value="Russia">095</option>
+				<option value="Belarus">099</option>	
+			</select><span class="bracket">)</span>
+			<input type="tel" pattern="[0-9]{7}"></li>
+			</ul>
+			
+		</li>
+		<li><input type="submit" value="Зарегистрироваться"></li>
+		</ul>
+		</form>
+	</div>
+</body>
+</html>

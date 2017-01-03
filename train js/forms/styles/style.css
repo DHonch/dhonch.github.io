@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif; }
+
+.form {
+  margin: auto;
+  height: 570px;
+  width: 370px;
+  border: 2px solid grey;
+  border-radius: 4px;
+  margin-top: 200px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px; }
+  .form h1, .form h2 {
+    text-align: center;
+    position: relative; }
+  .form h1:after {
+    content: ' ';
+    width: 138px;
+    height: 2px;
+    background: lightgrey;
+    position: absolute;
+    top: 25px;
+    margin-left: 10px; }
+  .form h1:before {
+    content: ' ';
+    width: 140px;
+    height: 2px;
+    background: lightgrey;
+    position: absolute;
+    top: 25px;
+    margin-left: -147px; }
+  .form p {
+    display: inline-block; }
+  .form input {
+    display: inline-block;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    padding-left: 10px; }
+  .form input[type="text"], .form input[type="e-mail"] {
+    float: right;
+    width: 250px; }
+  .form input[type="password"] {
+    float: right;
+    width: 200px; }
+  .form form > ul {
+    margin-top: 50px; }
+    .form form > ul li:nth-of-type(3) {
+      padding-bottom: 15px;
+      border-bottom: 1px solid lightgrey; }
+    .form form > ul li:nth-of-type(4), .form form > ul li:nth-of-type(5), .form form > ul li:nth-of-type(6) {
+      padding-right: 40px;
+      border-right: 1px solid lightgrey; }
+    .form form > ul li:nth-of-type(4) input {
+      width: 210px; }
+    .form form > ul li:nth-of-type(5) input {
+      width: 180px; }
+    .form form > ul li:nth-of-type(6) input {
+      width: 180px; }
+  .form li {
+    margin-top: 15px; }
+
+.tel {
+  width: 330px;
+  height: 130px;
+  border: 1px solid grey;
+  padding: 0 20px 10px 20px;
+  border-radius: 3px; }
+  .tel h2 {
+    margin-top: 5px;
+    margin-bottom: 10px; }
+  .tel select[name="region"] {
+    margin-left: 20px;
+    position: relative;
+    font-size: 15px; }
+  .tel select[name="operator"] {
+    margin-left: 3px;
+    position: relative;
+    font-size: 15px;
+    margin-right: 3px;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid grey; }
+  .tel input[type="tel"] {
+    font-size: 15px;
+    letter-spacing: 1px; }
+  .tel .bracket {
+    font-size: 16px;
+    margin-right: 10px;
+    margin-left: 10px; }
+
+/*# sourceMappingURL=style.css.map */

@@ -3,12 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<title>StartUp</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto+Slab:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="styles/reset.css">
+	<link rel="stylesheet" href="styles/style.css">
+	
 </head>
 <body>
 	<div class="wrapper">
 
 
 				<header>
+				<nav id="fixmenu">
 					<h2>Startup</h2>
 					<ul>
 						<li>Home</li>
@@ -19,21 +24,59 @@
 						<li>Clients</li>
 						<li>Contact</li>
 					</ul>
+				</nav>
 					<div class="welcome">
 						<h1>Welcome to STARTUP</h1>
 						<h3>Your Favourite Creative Agency Template</h3>
-						<a href="">Get Started</a>
+						<a href="#services" class="btnGetStart" id="start" onclick=" scroll() ">GET STARTED</a>
 					</div>
 				</header>
 
 
 				<main>
-					
-					
+					<div class="services">
+						<h2>SERVICES</h2>
+						<p>We offer ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+					</div>
+
+					<div class="aboutUs scrollEffect ">
+						<h2>ABOUT US</h2>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+					</div>
+
+					<div class="works scrollEffect">
+						<h2>LATEST WORKS</h2>
+					</div>
+
+					<div class="stayInTouch scrollEffect">
+					 	<h3>
+					 		Do you like OUR WORK so far? <br>
+							Let's talk about YOUR PROJECT!
+					 	</h3>
+						<a href="" class="btnGetStart">GET IN TOUCH</a>
+					</div>
+
+					<div class="blog scrollEffect" >
+						<h2>RECENT BLOG POSTS </h2>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+					</div>
+
+					<div class="client scrollEffect"></div>
+
+					<div class="contact scrollEffect">
+						<h2>GET IN TOUCH</h2>
+						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr amet</p>
+					</div>
+
 				</main>
 
 
-				<footer></footer>
-			</div>		
+				<footer>
+					ul(>li*4)+p
+				</footer>
+			</div>	
+
+	<script src="styles/js/scrolly_settings.js"></script>
+		
 </body>
 </html>

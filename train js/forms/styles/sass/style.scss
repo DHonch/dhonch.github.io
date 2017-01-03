@@ -1,0 +1,124 @@
+*  { 
+margin: 0;
+padding: 0;
+list-style: none;
+text-decoration: none;
+font-family: 'Oswald', sans-serif; }
+
+.form {
+	margin: auto;
+	height: 570px;
+	width: 370px;
+	border:2px solid grey;
+	border-radius: 4px;
+	margin-top: 200px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 40px;
+	h1,h2 {
+		text-align: center;
+		position: relative;}
+		h1:after {
+			content:' ';
+			width: 138px;
+			height: 2px;
+			background: lightgrey;
+			position: absolute;
+			top: 25px;
+			margin-left: 10px;
+		}
+		h1:before {
+			content:' ';
+			width: 140px;
+			height: 2px;
+			background: lightgrey;
+			position: absolute;
+			top: 25px;
+			margin-left: -147px;
+
+		}
+	
+	p {
+	display: inline-block;	
+	}
+	input {
+		display: inline-block;
+		border: 1px solid lightgrey;
+		border-radius: 3px;
+		padding-left: 10px;
+	}
+	input[type="text"] ,input[type="e-mail"]{
+		float: right;
+		width: 250px;
+	}
+	input[type="password"]{
+		float: right;
+		width: 200px;
+
+	}
+	
+	form>ul {
+		margin-top: 50px;
+		li:nth-of-type(3) {
+		padding-bottom: 15px;
+		border-bottom: 1px solid lightgrey;
+		}
+		li:nth-of-type(4),li:nth-of-type(5),li:nth-of-type(6) {
+			padding-right: 40px;
+			border-right: 1px solid lightgrey;
+		}
+		li:nth-of-type(4) input {
+			width: 210px;
+
+		}
+		li:nth-of-type(5) input {
+			width: 180px;
+
+		}
+		li:nth-of-type(6) input {
+			width: 180px;
+
+		}
+		
+
+	}
+	li {
+		margin-top: 15px;
+	}
+}
+.tel {
+	width: 370-40px;
+	height: 130px;
+	border: 1px solid grey;
+	padding: 0 20px 10px 20px;
+	border-radius: 3px;
+	h2 {
+		margin-top: 5px;
+		margin-bottom: 10px;
+	}
+	select[name="region"] {
+		margin-left: 20px;
+		position: relative;
+		font-size: 15px;
+	}
+	select[name="operator"] {
+		margin-left: 3px;
+		position: relative;
+		font-size: 15px;
+		margin-right: 3px;
+		display: inline-block;
+		border: none;
+		border-bottom: 1px solid grey;
+	}
+	input[type="tel"] {
+		font-size: 15px;
+		letter-spacing: 1px;
+	}
+	.bracket{
+		font-size: 16px;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	
+}
+

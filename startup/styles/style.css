@@ -1,0 +1,38 @@
+h1 { font-size: 48px; }
+
+h2 { font-size: 20px; }
+
+h3 { font-size: 14px; }
+
+h1, h2, h3, h4, h5, h6, header li { font-family: 'Montserrat', sans-serif; }
+
+p, a { text-decoration: none; font-family: 'Roboto Slab', serif; }
+
+.wrapper { width: 100%; height: auto; }
+
+nav { padding-top: 25px; }
+nav h2 { display: inline-block; margin-top: 5px; margin-left: 8%; }
+
+.btnGetStart { padding: 15px 45px; border: 2px solid white; border-radius: 1px; font-size: 16px; font-weight: bold; }
+
+.btnGetStart:hover { background: #fff; color: #c0301c; }
+
+a.btnGetStart[onclick] { -webkit-transition-duration: 1s; transition-duration: 1s; }
+
+header { background: rgba(98, 32, 32, 0.7) url(../img/header.png) center center no-repeat; background-size: cover; height: 769px; position: relative; }
+header a, header h1, header h2, header h3, header li, header p { color: white; }
+header ul { position: -webkit-sticky; position: sticky; float: right; margin-right: 13.5%; }
+header ul li { padding: 10px 15px; display: inline-block; cursor: pointer; }
+header .welcome { position: absolute; top: 313px; left: 50%; margin-left: -266px; text-align: center; }
+header .welcome h3 { margin-top: 28px; margin-bottom: 85px; }
+header .welcome a[onclick] { -webkit-transition-duration: 1s; transition-duration: 1s; }
+
+main > div { width: 100%; padding: 95px 0 100px 0; text-align: center; }
+main > div h2 { margin-bottom: 60px; position: relative; }
+main > div h2:before { content: " "; background: #8e8e8e; width: 50px; left: 50%; top: 45px; margin-left: -25px; height: 2px; position: absolute; }
+main .aboutUs { background: #f8f8f8; }
+main .stayInTouch { background: url(../img/blog/staybg.png) no-repeat rgba(178, 77, 56, 0.4); background-size: cover; text-align: center; padding-bottom: 0; height: 250px; }
+main .stayInTouch h3 { color: white; font-size: 30px; line-height: 40px; margin-bottom: 50px; }
+main .stayInTouch a { color: white; }
+main .contact { background: red; }
+main .blog { background: purple; }
