@@ -1,0 +1,77 @@
+ * {
+ 	margin: 0;
+ 	padding: 0;
+ 	list-style: none;
+ 	text-decoration: none;
+ }
+
+ h1 {
+ 	font-size: 60px;
+ }
+ h2 {
+ 	font-size: 77px;
+ }
+ p{
+ 	font-family: 'Open Sans', sans-serif;
+ }
+ @font-face {
+    font-family: BJ; 
+    src: url(../fonts/BJ.otf); 
+   }
+ h1,h2,h3,h4,h5,h6,li,span,a {
+ 	font-family: "BJ";
+ }
+ p {
+ 	font-family: "Open Sans";
+ }
+
+/*menu*/
+nav {
+	 		li {
+	 			display: inline-block;
+	 			
+	 			a {
+	 				padding: 15px 20px;
+	 				display: block;
+	 				color: black;
+					border-radius: 19px;
+					transition-duration: 0.8s;
+					font-size: 18px;
+	 			}
+	 			a:hover {
+	 				background: black;
+	 				color: #ffd500;
+	 				transition-duration: 0.8s;
+	 			} 
+
+	 		}
+ 		ul:hover {
+	 		li a{
+	 			text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
+	 			color: transparent;
+	 			transition-duration: 0.8s;
+	 			transform: scale(0.95);
+	 		}
+	 		li a:hover {
+	 			transform: scale(1);
+	 			color: #ffd500;
+	 			text-shadow: none;
+	 			transition-duration: 0.8s;
+	 		}
+		}
+ 	}
+/*end menu*/
+
+
+
+
+ header {
+ 	background: #ffd500;
+ 	width: 100%;
+ 	min-height:970px;
+ 	nav {
+ 		float: left;
+ 		margin-left: 205px;
+ 		margin-top: 40px;}
+ 	
+ }
