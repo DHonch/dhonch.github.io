@@ -156,15 +156,16 @@ content .block {
   position: relative;
   height: 900px;
   text-align: center;
+  background: #fef9fd;
 }
-content .block h2 {
+content .block > h2 {
   text-align: right;
   display: inline-block;
   width: 45%;
   padding-right: 90px;
   vertical-align: top;
 }
-content .block p {
+content .block > p {
   display: inline-block;
   text-align: left;
   width: 45%;
@@ -179,8 +180,23 @@ content .block ul li {
   width: 320px;
   height: 500px;
   text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+content .block ul li .circle1, content .block ul li .circle2, content .block ul li .circle3 {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  border-radius: 50%;
+}
+content .block ul li .circle1 {
+  background: url(../img/icons/g75.png) top left no-repeat;
+}
+content .block ul li .circle2 {
+  background: url(../img/icons/g65.png) top left no-repeat;
+}
+content .block ul li .circle3 {
+  background: url(../img/icons/g25.png) top left no-repeat;
 }
 content .block ul li p {
   width: 100%;
@@ -200,6 +216,13 @@ content .works p {
   text-align: right;
   padding-left: 0px;
   padding-right: 90px;
+}
+content .about li {
+  vertical-align: top;
+  width: 28%;
+}
+content .about li h3 {
+  margin-bottom: 20px;
 }
 
 footer {

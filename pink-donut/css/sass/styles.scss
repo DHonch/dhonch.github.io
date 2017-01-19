@@ -165,14 +165,15 @@ content {
 		position: relative;
 		height: 900px;
 		text-align: center;
-		h2 {
+		background: #fef9fd;
+		>h2 {
 			text-align: right;
 			display: inline-block;
 			width: 45%;
 			padding-right: 90px;
 			vertical-align: top;
 		}
-		p {display: inline-block;
+		>p {display: inline-block;
 			text-align: left;
 			width: 45%;
 			padding-left: 90px;
@@ -187,17 +188,31 @@ content {
 				width:320px;
 				height: 500px; 
 				text-align: center;
-				margin-left: 10px;
-				margin-right: 10px;
+				margin-left: 20px;
+				margin-right: 20px;
+				.circle1 ,.circle2 ,.circle3 {
+					width: 300px;
+					height: 300px;
+					display: inline-block;
+					border-radius: 50%;}
+				.circle1 {background: url(../img/icons/g75.png) top left no-repeat ;}				
+				.circle2 {background: url(../img/icons/g65.png) top left no-repeat ;}
+				.circle3 {background: url(../img/icons/g25.png) top left no-repeat ;}				
 				p {width: 100%;
 					padding: 0;
 					text-align: center;}
 				h3 {text-align: center;
 					margin-bottom: 10px;
-
-					}}
+					}
+				}
 			}
 	}
+
+
+
+
+
+
 	.works {
 		h2 {
 			text-align: left;
@@ -208,6 +223,15 @@ content {
 			text-align: right;
 			padding-left: 0px;
 			padding-right: 90px;
+		}
+	}
+	.about {
+		li {vertical-align: top;
+			width: 28%;
+			h3 {
+				margin-bottom: 20px;
+			}
+			
 		}
 	}
 }
