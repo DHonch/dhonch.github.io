@@ -69,6 +69,37 @@ nav ul:hover li a:hover {
 }
 
 /*end menu*/
+input, textarea {
+  font-family: BJ,"Open Sans";
+  width: 100%;
+  height: 37px;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background: #fad663;
+  margin-bottom: 8px;
+}
+
+textarea {
+  padding: 5px 10px;
+  height: 180px;
+  margin-bottom: 60px;
+}
+
+button {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  font-family: BJ;
+  display: block;
+  margin: auto;
+  vertical-align: center;
+  border-radius: 10px;
+  background: #fad663;
+  box-shadow: none;
+  border: 3px solid black;
+}
+
 /*button*/
 .donut-btn {
   display: block;
@@ -90,30 +121,8 @@ nav ul:hover li a:hover {
   background: url(../img/content/scroll.png) center center no-repeat;
 }
 
-.header-bg {
-  position: absolute;
-  top: 250px;
-  width: 100%;
-  height: 450px;
-  left: 50%;
-  margin-left: -50%;
-  z-index: 1;
-}
-.header-bg .donut-bg {
-  background: url(../img/header/donut.png) 10px 120px no-repeat;
-  float: left;
-  width: 50%;
-  height: 480px;
-}
-.header-bg .tomato-bg {
-  float: right;
-  background: url(../img/header/tomato.png) 90% 0 no-repeat;
-  width: 50%;
-  height: 480px;
-}
-
 header {
-  background: #ffd500;
+  background: #ffd501 url(../img/header/headerbg.png) center 185px no-repeat;
   width: 100%;
   min-height: 970px;
   padding-top: 40px;
@@ -133,8 +142,8 @@ header .logo {
 header .logo h1 {
   margin-bottom: 70px;
 }
-header .logo img {
-  margin-bottom: 70px;
+header .logo a {
+  margin-top: 270px;
 }
 
 content .scroll {
@@ -299,34 +308,6 @@ footer .column {
 footer .column form {
   margin-top: 80px;
 }
-footer .column input, footer .column textarea {
-  font-family: BJ,"Open Sans";
-  width: 100%;
-  height: 37px;
-  padding-left: 10px;
-  border-radius: 10px;
-  border: 3px solid black;
-  background: #fad663;
-  margin-bottom: 8px;
-}
-footer .column textarea {
-  padding: 5px 10px;
-  height: 180px;
-  margin-bottom: 60px;
-}
-footer .column button {
-  width: 150px;
-  height: 40px;
-  text-align: center;
-  font-family: BJ;
-  display: block;
-  margin: auto;
-  vertical-align: center;
-  border-radius: 10px;
-  background: #fad663;
-  box-shadow: none;
-  border: 3px solid black;
-}
 footer .column .social {
   margin-top: 50px;
   width: 110%;
@@ -385,8 +366,8 @@ footer .footer-end ul:hover li a:hover {
 }
 
 #modal_form {
-  width: 300px;
-  height: 300px;
+  width: 600px;
+  height: 500px;
   /* ╨аa╨╖╨╝╨╡╤А╤Л ╨┤o╨╗╨╢╨╜╤Л ╨▒╤Л╤В╤М ╤Д╨╕╨║╤Б╨╕╤Аo╨▓a╨╜╤Л */
   border-radius: 5px;
   border: 3px #000 solid;
@@ -407,6 +388,9 @@ footer .footer-end ul:hover li a:hover {
   z-index: 5;
   /* o╨║╨╜o ╨┤o╨╗╨╢╨╜o ╨▒╤Л╤В╤М ╨╜a╨╕╨▒o╨╗╨╡╨╡ ╨▒o╨╗╤М╤И╨╡╨╝ ╤Б╨╗o╨╡ */
   padding: 20px 10px;
+}
+#modal_form > h4 {
+  margin-top: 20px;
 }
 
 /* ╨Ъ╨╜o╨┐╨║a ╨╖a╨║╤А╤Л╤В╤М ╨┤╨╗╤П ╤В╨╡╤Е ╨║╤Вo ╨▓ ╤Вa╨╜╨║╨╡) */
@@ -442,4 +426,23 @@ footer .footer-end ul:hover li a:hover {
   cursor: pointer;
   display: none
   /* ╨▓ o╨▒╤Л╤З╨╜o╨╝ ╤Бo╤Б╤Вo╤П╨╜╨╕╨╕ ╨╡╤С ╨╜╨╡╤В) */
+}
+
+.modal-window {
+  margin-top: 20px;
+  text-align: center;
+}
+.modal-window h4 {
+  text-align: left;
+  margin-left: 10%;
+}
+.modal-window input, .modal-window textarea {
+  margin: auto;
+  text-align: left;
+  width: 84%;
+  margin-bottom: 25px;
+}
+.modal-window button {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }

@@ -64,7 +64,35 @@ nav {
 		}
  	}
 /*end menu*/
+input ,textarea {
+ 			font-family: BJ,"Open Sans";
+ 			width: 100%;
+ 			height: 37px;
+ 			padding-left: 10px;
+ 			border-radius: 10px;
+ 			border:3px solid black;
+ 			background: #fad663;
+ 			margin-bottom: 8px;
+ 		}
+ 		textarea {
+			padding: 5px 10px;
+ 			height: 180px;
+ 			margin-bottom: 60px;
+ 		}
+ 		button {
+ 			width: 150px;
+ 			height: 40px;
+ 			text-align: center;
+ 			font-family: BJ;
+ 			display: block;
+ 			margin: auto;
+ 			vertical-align: center;
+ 			border-radius: 10px;
+ 			background: #fad663;
+ 			box-shadow: none;
+ 			border: 3px solid black;
 
+ 		}
 /*button*/
 .donut-btn {
 	display: block;
@@ -81,41 +109,16 @@ nav {
 .scroll {
 	width: 10px;
 	height: 220px;
-	
 	margin: auto;
 	margin-top: 90px;
 	background:url(../img/content/scroll.png) center center no-repeat;
 }
-.header-bg {
+
+
+ header {	
 	
- 	 position: absolute;
- 	 top: 250px;
- 	 width: 100%;
- 	 height:450px;
- 	 left: 50%;
- 	 margin-left: -50%;
- 	 z-index: 1;
-
- 	.donut-bg {
- 		background: url(../img/header/donut.png) 10px 120px no-repeat ;
- 		float: left;
- 		width: 50%;
- 		height: 480px;
- 		
- 	}
- 	.tomato-bg {
- 		float: right;
- 		background: url(../img/header/tomato.png) 90% 0  no-repeat;
- 		width: 50%;
- 		height: 480px;
- 		
- 	}
-
-}
-
- header {
- 	background:  #ffd500 ; 
- 	 
+	background: #ffd501 url(../img/header/headerbg.png) center 185px  no-repeat;
+	
  	width: 100%;
  	min-height:970px;
  	padding-top: 40px;
@@ -134,8 +137,8 @@ nav {
  		h1 {
 			margin-bottom: 70px;
  		}
- 		img {
- 			margin-bottom: 70px;
+ 		a {
+ 			margin-top: 270px;
 
  		}	
  	}
@@ -309,35 +312,7 @@ content {
  		form {
  			margin-top: 80px;
  		}
- 		input ,textarea {
- 			font-family: BJ,"Open Sans";
- 			width: 100%;
- 			height: 37px;
- 			padding-left: 10px;
- 			border-radius: 10px;
- 			border:3px solid black;
- 			background: #fad663;
- 			margin-bottom: 8px;
- 		}
- 		textarea {
-			padding: 5px 10px;
- 			height: 180px;
- 			margin-bottom: 60px;
- 		}
- 		button {
- 			width: 150px;
- 			height: 40px;
- 			text-align: center;
- 			font-family: BJ;
- 			display: block;
- 			margin: auto;
- 			vertical-align: center;
- 			border-radius: 10px;
- 			background: #fad663;
- 			box-shadow: none;
- 			border: 3px solid black;
-
- 		}
+ 		
  		.social {
  			margin-top: 50px;
  			width: 110%;
@@ -391,8 +366,8 @@ content {
 
 
  #modal_form {
-	width: 300px; 
-	height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
+	width: 600px; 
+	height: 500px; /* Рaзмеры дoлжны быть фиксирoвaны */
 	border-radius: 5px;
 	border: 3px #000 solid;
 	background: #fff;
@@ -405,6 +380,9 @@ content {
 	opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
 	z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
 	padding: 20px 10px;
+	>h4 {
+		margin-top: 20px;
+	}
 }
 /* Кнoпкa зaкрыть для тех ктo в тaнке) */
 #modal_form #modal_close {
@@ -430,4 +408,23 @@ content {
 	left:0;
 	cursor:pointer;
 	display:none; /* в oбычнoм сoстoянии её нет) */
+}
+
+.modal-window {
+	margin-top: 20px;
+	text-align: center;
+	h4 {
+	text-align: left;
+	margin-left: 10%;
+	}
+ input ,textarea {
+ 	margin: auto;
+ 	text-align: left;
+ 	width: 84%;
+ 	margin-bottom: 25px;
+ }
+ button {
+ 	margin-top: 10px;
+ 	margin-bottom: 20px;
+ }
 }
