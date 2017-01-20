@@ -19,27 +19,6 @@ window.onscroll = function() {
   		} 
 		  	else  {
 		  		 elem.classList.remove("bg-for-scrollblock");
-		  	} 
-
-
-  var elem = document.querySelector(".scrollblockjs3");
-  if ( scrolled >= 1400 & scrolled <= 1600 ){
-  	 elem.classList.add("bg-for-scrollblock");
-  		} else if ( scrolled <= 1600 ){
-  			 elem.classList.remove("bg-for-scrollblock");
-  		} 
-		  	else  {
-		  		 elem.classList.remove("bg-for-scrollblock");
-		  	} 
-
-  var elem = document.querySelector(".scrollblockjs4");
-  if ( scrolled >= 1800  ){
-  	 elem.classList.add("bg-for-scrollblock");
-  		} else if ( scrolled <= 2300 ){
-  			 elem.classList.remove("bg-for-scrollblock");
-  		} 
-		  	else  {
-		  		 elem.classList.remove("bg-for-scrollblock");
 		  	} 				  
 };
 	
