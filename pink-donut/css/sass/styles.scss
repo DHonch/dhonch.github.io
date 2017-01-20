@@ -93,8 +93,34 @@ input ,textarea {
 
  		}
 /*button*/
-.donut-btn {
+.btn-style-donut {
+	display: inline-block;
+
+	width: 300px;
+	height: 45px;
+	position: relative;
+}
+.btn-style-donut:before , .btn-style-donut:after{
+	content: " ";
+	position: relative;
 	display: block;
+	width: 250px;
+	height: 4px;
+	background: black;
+	top: 20px;
+	left: 10px;
+z-index: -11;
+}
+.btn-style-donut:after {
+	top: -20px;
+	left: 40px;
+}
+
+
+ 
+.donut-btn {
+	display: inline-block;
+	z-index: 15;
 	margin: auto;
 	width: 145px;
 	text-align: center;
@@ -103,6 +129,16 @@ input ,textarea {
 	background: #fad663;
 	border: 3px solid black;
 	color: black;
+	transition-duration: 0.5s;
+	vertical-align: bottom;
+}
+.donut-btn:hover {
+	background: black;
+	color: #fad663;
+	width: 180px;
+	border: 3px solid #fad663;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+	transition-duration: 0.5s;
 }
 
 .scroll {
@@ -115,15 +151,14 @@ input ,textarea {
 
 
  header {	
-	
 	background: #ffd501 url(../img/header/headerbg.png) center 185px  no-repeat;
-	
  	width: 100%;
  	min-height:970px;
  	padding-top: 40px;
+ 	text-align: center;
  	
  	nav {
- 		margin-left: 205px;
+ 		display: inline-block;
  		margin-bottom: 110px;
  	}
  	.logo {
@@ -131,16 +166,17 @@ input ,textarea {
  		text-align: center;
  		display:block;
  		width: 800px;
+ 		height: 600px;
  		margin: auto;
  		z-index: 10;
  		h1 {
 			margin-bottom: 70px;
  		}
- 		a {
- 			margin-top: 270px;
-
- 		}	
+ 			
  	}
+ 	.btn-style-donut {
+ 		margin-top:390px;
+		}
  	
  }
 
@@ -193,6 +229,7 @@ content {
 				text-align: center;
 				margin-left: 20px;
 				margin-right: 20px;
+				margin-bottom: 10px;
 				.circle1 ,.circle2 ,.circle3 {
 					width: 300px;
 					height: 300px;
@@ -227,8 +264,18 @@ content {
 			padding-left: 0px;
 			padding-right: 90px;
 		}
+		.btn-style-donut {
+			z-index: 1;
+		}
 		.donut-btn {
 			background: #fff;
+			width: 175px;
+		}
+		.donut-btn:hover {
+		background: black;
+		color: white;
+		width: 210px;
+		border: 3px solid white;
 		}
 		.examples {
 			width: 100%;
@@ -310,6 +357,19 @@ content {
  		text-align: left;
  		form {
  			margin-top: 80px;
+ 			.btn-style-donut {
+ 				z-index: 15;
+ 			}
+ 			.btn-style-donut:before  {
+ 				top: 20px;
+ 			}
+ 			.btn-style-donut:after  {
+ 				top: -15px;
+ 			}
+ 			button {
+ 				z-index: 10;
+
+ 			}
  		}
  		
  		.social {
@@ -344,12 +404,12 @@ content {
  		width: 100%;
  		h5 {
  			display: inline-block;
- 			width: 400px;
+ 			width: 450px;
  			height: auto;
  		}
  		nav {
  			display: inline-block;
- 			margin-left: 13%;
+ 			margin-left: 5%;
  		}
 	 	ul:hover li a:hover {
 	 		color:#d2eae3;
