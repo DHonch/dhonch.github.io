@@ -5,6 +5,9 @@
  	text-decoration: none;
  	box-sizing:  border-box;
  }
+ body {
+ 	background: #fef9fd;
+ }
  h1 {
  	font-size: 60px;
  	letter-spacing: 3px;
@@ -184,7 +187,8 @@ z-index: -11;
  	
  }
 
-content {
+main {
+	background: #fef9fd;
 	.scroll {
 		position: absolute;
 		left: 50%;
@@ -205,7 +209,8 @@ content {
 		padding-bottom: 95px;
 		padding-top: 120px;
 		position: relative;
-		
+		opacity: 0;
+		margin-top: 20px;
 		text-align: center;
 		box-sizing: content-box;
 		background: #fef9fd;
@@ -513,3 +518,5 @@ content {
  	margin-bottom: 20px;
  }
 }
+
+

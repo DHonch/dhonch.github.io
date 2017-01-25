@@ -6,6 +6,9 @@
   text-decoration: none;
   box-sizing: border-box; }
 
+body {
+  background: #fef9fd; }
+
 h1 {
   font-size: 60px;
   letter-spacing: 3px; }
@@ -163,125 +166,129 @@ header {
   header .btn-style-donut {
     margin-top: 390px; }
 
-content .scroll {
-  position: absolute;
-  left: 50%;
-  top: 15px;
-  margin: 0;
-  margin-left: -5px; }
-content .h80 {
-  position: relative;
-  height: 80px;
-  margin-bottom: 30px;
-  margin-top: 10px; }
-content .block {
-  width: 100%;
-  padding-bottom: 95px;
-  padding-top: 120px;
-  position: relative;
-  text-align: center;
-  box-sizing: content-box;
+main {
   background: #fef9fd; }
-  content .block > h2 {
-    text-align: right;
-    display: inline-block;
-    width: 45%;
-    padding-right: 90px;
-    vertical-align: top; }
-  content .block > p {
-    display: inline-block;
-    text-align: left;
-    width: 45%;
-    padding-left: 90px;
-    vertical-align: top; }
-  content .block ul {
-    margin-top: 120px; }
-    content .block ul li {
+  main .scroll {
+    position: absolute;
+    left: 50%;
+    top: 15px;
+    margin: 0;
+    margin-left: -5px; }
+  main .h80 {
+    position: relative;
+    height: 80px;
+    margin-bottom: 30px;
+    margin-top: 10px; }
+  main .block {
+    width: 100%;
+    padding-bottom: 95px;
+    padding-top: 120px;
+    position: relative;
+    opacity: 0;
+    margin-top: 20px;
+    text-align: center;
+    box-sizing: content-box;
+    background: #fef9fd; }
+    main .block > h2 {
+      text-align: right;
       display: inline-block;
-      width: 320px;
+      width: 45%;
+      padding-right: 90px;
+      vertical-align: top; }
+    main .block > p {
+      display: inline-block;
+      text-align: left;
+      width: 45%;
+      padding-left: 90px;
+      vertical-align: top; }
+    main .block ul {
+      margin-top: 120px; }
+      main .block ul li {
+        display: inline-block;
+        width: 320px;
+        vertical-align: top;
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 10px; }
+        main .block ul li .circle1, main .block ul li .circle2, main .block ul li .circle3 {
+          width: 300px;
+          height: 300px;
+          display: inline-block;
+          border-radius: 50%; }
+        main .block ul li .circle1 {
+          background: url(../img/icons/g75.png) top left no-repeat; }
+        main .block ul li .circle2 {
+          background: url(../img/icons/g65.png) top left no-repeat; }
+        main .block ul li .circle3 {
+          background: url(../img/icons/g25.png) top left no-repeat; }
+        main .block ul li p {
+          width: 100%;
+          padding: 0;
+          text-align: center; }
+        main .block ul li h3 {
+          text-align: center;
+          margin-bottom: 10px; }
+  main .works h2 {
+    text-align: left;
+    padding-left: 90px;
+    padding-right: 0; }
+  main .works p {
+    text-align: right;
+    padding-left: 0px;
+    padding-right: 90px; }
+  main .works .btn-style-donut {
+    z-index: 1; }
+  main .works .donut-btn {
+    background: #fff;
+    width: 175px; }
+  main .works .donut-btn:hover {
+    background: black;
+    color: white;
+    width: 210px;
+    border: 3px solid white; }
+  main .works .examples {
+    width: 100%;
+    max-width: 2000px;
+    margin: auto;
+    margin-top: 130px;
+    margin-bottom: 60px; }
+    main .works .examples .project {
+      width: 24%;
+      height: 450px;
+      display: inline-block;
       vertical-align: top;
       text-align: center;
-      margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 10px; }
-      content .block ul li .circle1, content .block ul li .circle2, content .block ul li .circle3 {
-        width: 300px;
-        height: 300px;
+      padding-top: 80px; }
+      main .works .examples .project img {
+        width: 90%;
         display: inline-block;
-        border-radius: 50%; }
-      content .block ul li .circle1 {
-        background: url(../img/icons/g75.png) top left no-repeat; }
-      content .block ul li .circle2 {
-        background: url(../img/icons/g65.png) top left no-repeat; }
-      content .block ul li .circle3 {
-        background: url(../img/icons/g25.png) top left no-repeat; }
-      content .block ul li p {
-        width: 100%;
-        padding: 0;
-        text-align: center; }
-      content .block ul li h3 {
-        text-align: center;
-        margin-bottom: 10px; }
-content .works h2 {
-  text-align: left;
-  padding-left: 90px;
-  padding-right: 0; }
-content .works p {
-  text-align: right;
-  padding-left: 0px;
-  padding-right: 90px; }
-content .works .btn-style-donut {
-  z-index: 1; }
-content .works .donut-btn {
-  background: #fff;
-  width: 175px; }
-content .works .donut-btn:hover {
-  background: black;
-  color: white;
-  width: 210px;
-  border: 3px solid white; }
-content .works .examples {
-  width: 100%;
-  max-width: 2000px;
-  margin: auto;
-  margin-top: 130px;
-  margin-bottom: 60px; }
-  content .works .examples .project {
-    width: 24%;
-    height: 450px;
-    display: inline-block;
+        vertical-align: center; }
+    main .works .examples .project:nth-of-type(1) {
+      background: #ef7778;
+      padding-top: 110px; }
+      main .works .examples .project:nth-of-type(1) img {
+        width: 70%; }
+    main .works .examples .project:nth-of-type(2) {
+      background: #ececec;
+      padding-top: 110px; }
+      main .works .examples .project:nth-of-type(2) img {
+        width: 30%; }
+    main .works .examples .project:nth-of-type(3) {
+      background: #d5ede7;
+      padding-top: 110px; }
+    main .works .examples .project:nth-of-type(4) {
+      background: #fad663; }
+  main .about li {
     vertical-align: top;
-    text-align: center;
-    padding-top: 80px; }
-    content .works .examples .project img {
-      width: 90%;
-      display: inline-block;
-      vertical-align: center; }
-  content .works .examples .project:nth-of-type(1) {
-    background: #ef7778;
-    padding-top: 110px; }
-    content .works .examples .project:nth-of-type(1) img {
-      width: 70%; }
-  content .works .examples .project:nth-of-type(2) {
-    background: #ececec;
-    padding-top: 110px; }
-    content .works .examples .project:nth-of-type(2) img {
-      width: 30%; }
-  content .works .examples .project:nth-of-type(3) {
-    background: #d5ede7;
-    padding-top: 110px; }
-  content .works .examples .project:nth-of-type(4) {
-    background: #fad663; }
-content .about li {
-  vertical-align: top;
-  width: 28%; }
-  content .about li h3 {
-    margin-bottom: 20px; }
-content .ido img {
-  height: 190px; }
-content .ido li:nth-of-type(3) img {
-  height: 140px;
-  margin-bottom: 50px; }
+    width: 28%; }
+    main .about li h3 {
+      margin-bottom: 20px; }
+  main .ido img {
+    height: 190px; }
+  main .ido li:nth-of-type(3) img {
+    height: 140px;
+    margin-bottom: 50px; }
 
 footer {
   height: 860px;
