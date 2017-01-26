@@ -11,13 +11,14 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="scripts/jquery.js"></script>
 	<script src="scripts/script.js"></script>
+
 </head>
 <body>
 
  
 
-	<header>
-	  	<nav class="menu">
+	<header class="header">
+	  	<nav class="menu" id="menu">
 	  		<ul>
 	  			<li><a class="go_to" href="header">home</a></li>
 	  			<li><a class="go_to" href=".ido">what i do</a></li>
@@ -165,12 +166,14 @@
 	  			</ul>
 	  		</nav>
 	  	</div>
+
+	
 	  </footer>
 
 <div id="modal_form">
       <span id="modal_close">X</span>
-	<h4>give me your email</h4>
-<form action="" class="modal-window">
+	  <h4>give me your email</h4>
+		<form action="" class="modal-window">
 				<h4>email :</h4>
 				<input type="email">
 		  		<h4>message :</h4>
@@ -178,9 +181,41 @@
 		  		<button > send </button>
 					</form>
 		<h4>and i will send you my portfolio ...</h4>
-		</div>
+</div>
 <div id="overlay"></div>
 	
-		  		
+	
+<div id="loader" style="display: block;">
+		<div class="load-logo"></div>
+		<h2>Loading</h2>
+	</div>
+
+<script>
+function load() {
+    var loader = document.getElementById('loader')
+    	
+    if (loader.style.display == "block")
+   			{loader.classList.add("close-loader");
+	}
+		else
+		   {loader.style.display = "none"}
+		};
+
+ setTimeout ( load , 1000 );
+
+ function loadDN() {
+    var loader = document.getElementById('loader')
+    	
+    if (loader.style.display == "block")
+   			{loader.style.display = "none";
+	}
+		else
+		   {loader.style.display = "none"}
+		};
+	
+ setTimeout ( loadDN , 2000 );
+
+
+</script>
 </body>
 </html>
