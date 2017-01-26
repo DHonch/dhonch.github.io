@@ -562,7 +562,7 @@ main {
 
 }
 .close-loader {
-	transition-duration: 1s;
+	transition:opacity 1s ease-out 0.1s ;
 	opacity: 0;
 }
 @keyframes donut-rotate {

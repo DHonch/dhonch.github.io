@@ -495,8 +495,8 @@ footer {
     margin-top: 50vh; }
 
 .close-loader {
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition: opacity 1s ease-out 0.1s;
+          transition: opacity 1s ease-out 0.1s;
   opacity: 0; }
 
 @-webkit-keyframes donut-rotate {
