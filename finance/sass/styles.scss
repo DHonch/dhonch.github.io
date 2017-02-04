@@ -1,0 +1,172 @@
+/*
+ 1.reset global stylesheets
+ 2.header
+*/
+
+
+/*1*/  /*-------------------reset global stylesheets-------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+
+}
+
+q:before, q:after {
+	content: '';
+	}
+h1,h2,h3,h4,h5,h6,a,p,span,b,i,li {
+	font-family: 'Comfortaa', cursive;
+}
+
+h1 {margin: 15px 0 15px 0;}
+h2,h3,h4{margin: 10px 0 10px 0;}
+
+.cash , .date , .period ,.my-fund {
+	display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+.menu {
+		display: inline-block;
+		li {
+			display: inline-block;
+			margin: 10px 15px 0 15px;
+			border-radius: 6px;
+			background: #524e4b; 
+
+			a { 
+				color: #eae3b7;
+				font-size: 18px;
+				padding: 10px 15px;
+				display: block;
+			}
+		}
+		li:hover a {
+			color: white;
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*2*/ /*-------------------header-------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+	width: 100%;
+	height: 100vh;
+	background: url("images/header.jpg") center top no-repeat;
+	background-size: cover;
+	background-attachment: fixed ;
+	box-shadow: inset 0px 0px 51px 9px rgba(0,0,0,0.75);
+	text-align: center;
+	padding-top: 92vh;
+	
+}
+
+
+main {
+	width: 100%;
+	text-align: center;
+	li {
+			margin-top: 5px;
+		}
+	.result {
+		width: 100%;
+		margin-top: 40px;
+		padding-top: 15px;
+		padding-bottom:15px;
+
+	}
+	.fund {
+		width: 100%;
+		padding: 25px 0 25px 0;
+		border: 2px solid lightgrey;
+		border-top: none;
+		border-right: none;
+		border-left:none;
+		.my-fund {
+			width: 45%;
+		}
+		.month {
+			font-size: 14px;
+		}
+		.budget  { 
+			text-align: center;
+			.period {
+		    	vertical-align: top;
+		    	width: 30%;
+		    	.date {
+		    		margin-top: 15px;
+		    	}
+			}
+		}
+
+
+	}
+	.consumption {
+		>ul {display: inline-block; width: 20%;vertical-align: top;
+			ul {vertical-align: top; width: 45%;display: inline-block;}
+		}
+	}
+}
+
+.income ul {
+	display: inline-block;
+	width: 45%;
+
+}
+.red {
+	color:#DC143C;
+}
+.green {
+	color: #008000;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+footer {
+	width: 100%;
+	height: 100vh;
+	padding-top: 5vh;
+	background: url('images/footer.jpg')center top no-repeat;
+	background-size: cover;
+	background-attachment: fixed ;
+	text-align: center;
+
+}
