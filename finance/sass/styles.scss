@@ -16,9 +16,7 @@
 
 }
 
-q:before, q:after {
-	content: '';
-	}
+
 h1,h2,h3,h4,h5,h6,a,p,span,b,i,li {
 	font-family: 'Comfortaa', cursive;
 }
@@ -29,17 +27,7 @@ h2,h3,h4{margin: 10px 0 10px 0;}
 .cash , .date , .period ,.my-fund {
 	display: inline-block;
 }
-
-
-
-
-
-
-
-
-
-
-
+/*3*/  /*-------------------menu-------------------------*/
 .menu {
 		display: inline-block;
 		li {
@@ -47,26 +35,24 @@ h2,h3,h4{margin: 10px 0 10px 0;}
 			margin: 10px 15px 0 15px;
 			border-radius: 6px;
 			background: #524e4b; 
+			position: relative;
+			border: 2px solid transparent;
 
 			a { 
 				color: #eae3b7;
-				font-size: 18px;
+				font-size: 14px;
 				padding: 10px 15px;
 				display: block;
 			}
 		}
-		li:hover a {
-			color: white;
-		}
+		li:hover {
+			border: 2px solid  #eae3b7;
+			transition-duration: 0.5s;
+			a {
+			color: white;transition-duration: 0.5s;
+		}}
 
 	}
-
-
-
-
-
-
-
 
 
 
@@ -77,26 +63,49 @@ h2,h3,h4{margin: 10px 0 10px 0;}
 
 
 
-
-
-
-
-
-
-
-
-
 header {
 	width: 100%;
 	height: 100vh;
-	background: url("images/header.jpg") center top no-repeat;
+	background: url("images/header.png") center top no-repeat;
 	background-size: cover;
 	background-attachment: fixed ;
 	box-shadow: inset 0px 0px 51px 9px rgba(0,0,0,0.75);
 	text-align: center;
-	padding-top: 92vh;
+	padding-top: 96vh;
+	 .menu {width: 100%;background: #524e4b; 
+
+		li {margin: 0;
+			background: #524e4b; 
+			position: relative;
+			border: 2px solid transparent;
+			transition-duration: 1s;
+			border-top: 0;
+			border-bottom: 0;
+			border-radius: none;
+			}
+			a { 
+				color: #eae3b7;
+				font-size: 14px;
+				padding: 10px 20px;
+				display: block;
+				transition-duration: 1s;
+			}
+		li:hover{
+			border-top: 0;
+			border-bottom: 0;
+			border-radius: 0;}
+		li:not(:first-of-type) {
+			margin-left: -4px;
+		}
+
+		
+		
 	
 }
+}
+
+
+
 
 
 main {
