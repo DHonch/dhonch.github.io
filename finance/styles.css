@@ -59,7 +59,8 @@ header {
   background-attachment: fixed;
   box-shadow: inset 0px 0px 51px 9px rgba(0, 0, 0, 0.75);
   text-align: center;
-  padding-top: 96vh; }
+  padding-top: calc(100vh - 35px);
+  box-sizing: border-box !important; }
   header .menu {
     width: 100%;
     background: #524e4b; }
